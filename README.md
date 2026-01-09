@@ -41,23 +41,23 @@ AI-Powered-Dataset-Summarizer/
 
 ## Installation & Setup
 
-1. Clone the repository
+### Clone the repository
+	•	git clone https://github.com/yabodetchou/AI-Powered-Dataset-Summarizer.git
+	•	cd AI-Powered-Dataset-Summarizer
+	
 
-git clone https://github.com/yabodetchou/AI-Powered-Dataset-Summarizer.git
-cd AI-Powered-Dataset-Summarizer
+### add your own API key in .env
 
-add your own API key in .env
-
-2. Run the backend
-cd backend
-source("analysis.R")
+### Run the backend
+	•	cd backend
+	•	source("analysis.R")
 
 
-3. Frontend
-cd frontend
-python3 -m http.server 8080
 
-Open http://localhost:8080 in the browser.
+### Frontend
+	•	cd frontend
+	•	python3 -m http.server 8080
+	Open http://localhost:8080 in the browser.
 
 
 
