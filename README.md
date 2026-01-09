@@ -15,19 +15,23 @@ This project is designed to reduce the time spent on exploratory data analysis (
   
 ## Project Structure
 
-AI-Powered-Dataset-Summarizer/
-│
-├── backend/        # Data processing and analysis logic
-├── frontend/       # User interface
-├── data/           # Sample datasets
-├── .gitignore
-└── README.md
+	AI-Powered-Dataset-Summarizer
+	│
+	├── backend/        # Data processing and analysis logic
+	├── frontend/       # User interface
+	├── data/           # Sample datasets
+	├── .gitignore
+	└── README.md
+
+
+	
+
 
 
 ## How It Works
 	- The backend processes the dataset and computes summary statistics
-	-	An AI component generates a human-readable explanation of the dataset
-  - Results are returned and displayed in the frontend
+	- An AI component generates a human-readable explanation of the dataset
+	- Results are returned and displayed in the frontend
   
   
   ## Tech Stack
