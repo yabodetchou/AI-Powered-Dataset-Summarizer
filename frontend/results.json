@@ -1,0 +1,270 @@
+{
+  "dataset_overview": {
+    "num_cells": [100],
+    "num_genes": [100]
+  },
+  "missing_data": {
+    "top_missing_genes": [0, 0, 0, 0, 0],
+    "missing_cells_summary": {
+      "Min.": [0],
+      "1st Qu.": [0],
+      "Median": [0],
+      "Mean": [0],
+      "3rd Qu.": [0],
+      "Max.": [0]
+    }
+  },
+  "cluster_summary": [
+    {
+      "perturbation": "INTERGENIC1144056",
+      "cells": 1095
+    },
+    {
+      "perturbation": "INTERGENIC1216445",
+      "cells": 868
+    },
+    {
+      "perturbation": "INTERGENIC216151",
+      "cells": 1990
+    },
+    {
+      "perturbation": "INTERGENIC345439",
+      "cells": 816
+    },
+    {
+      "perturbation": "group",
+      "cells": 1
+    },
+    {
+      "perturbation": "multi",
+      "cells": 12042
+    },
+    {
+      "perturbation": "sgARHGEF17_1",
+      "cells": 944
+    },
+    {
+      "perturbation": "sgARHGEF17_4",
+      "cells": 651
+    },
+    {
+      "perturbation": "sgAURKA_3",
+      "cells": 322
+    },
+    {
+      "perturbation": "sgAURKB_4",
+      "cells": 315
+    },
+    {
+      "perturbation": "sgAURKB_6",
+      "cells": 328
+    },
+    {
+      "perturbation": "sgAURKC_1",
+      "cells": 726
+    },
+    {
+      "perturbation": "sgAURKC_7",
+      "cells": 608
+    },
+    {
+      "perturbation": "sgCABP7_1",
+      "cells": 770
+    },
+    {
+      "perturbation": "sgCABP7_2",
+      "cells": 506
+    },
+    {
+      "perturbation": "sgCABP7_4",
+      "cells": 617
+    },
+    {
+      "perturbation": "sgCENPE_1",
+      "cells": 171
+    },
+    {
+      "perturbation": "sgCENPE_2",
+      "cells": 402
+    },
+    {
+      "perturbation": "sgCENPE_4",
+      "cells": 809
+    },
+    {
+      "perturbation": "sgCEP55_1",
+      "cells": 1250
+    },
+    {
+      "perturbation": "sgCEP55_4",
+      "cells": 1562
+    },
+    {
+      "perturbation": "sgCIT_1",
+      "cells": 1009
+    },
+    {
+      "perturbation": "sgCIT_7",
+      "cells": 800
+    },
+    {
+      "perturbation": "sgCREB1_2",
+      "cells": 767
+    },
+    {
+      "perturbation": "sgCREB1_4",
+      "cells": 712
+    },
+    {
+      "perturbation": "sgCREB1_5",
+      "cells": 731
+    },
+    {
+      "perturbation": "sgE2F4_6",
+      "cells": 676
+    },
+    {
+      "perturbation": "sgE2F4_7",
+      "cells": 684
+    },
+    {
+      "perturbation": "sgECT2_2",
+      "cells": 689
+    },
+    {
+      "perturbation": "sgECT2_3",
+      "cells": 395
+    },
+    {
+      "perturbation": "sgEGR1_2",
+      "cells": 702
+    },
+    {
+      "perturbation": "sgEGR1_3",
+      "cells": 555
+    },
+    {
+      "perturbation": "sgEGR1_4",
+      "cells": 683
+    },
+    {
+      "perturbation": "sgELF1_1",
+      "cells": 673
+    },
+    {
+      "perturbation": "sgELF1_2",
+      "cells": 1204
+    },
+    {
+      "perturbation": "sgELF1_4",
+      "cells": 615
+    },
+    {
+      "perturbation": "sgELF1_5",
+      "cells": 903
+    },
+    {
+      "perturbation": "sgELK1_1",
+      "cells": 691
+    },
+    {
+      "perturbation": "sgELK1_2",
+      "cells": 2393
+    },
+    {
+      "perturbation": "sgELK1_6",
+      "cells": 899
+    },
+    {
+      "perturbation": "sgELK1_7",
+      "cells": 738
+    },
+    {
+      "perturbation": "sgETS1_3",
+      "cells": 715
+    },
+    {
+      "perturbation": "sgETS1_5",
+      "cells": 776
+    },
+    {
+      "perturbation": "sgGABPA_1",
+      "cells": 1014
+    },
+    {
+      "perturbation": "sgGABPA_9",
+      "cells": 475
+    },
+    {
+      "perturbation": "sgIRF1_2",
+      "cells": 636
+    },
+    {
+      "perturbation": "sgIRF1_3",
+      "cells": 546
+    },
+    {
+      "perturbation": "sgNR2C2_2",
+      "cells": 204
+    },
+    {
+      "perturbation": "sgNR2C2_3",
+      "cells": 467
+    },
+    {
+      "perturbation": "sgNR2C2_5",
+      "cells": 869
+    },
+    {
+      "perturbation": "sgOGG1_2",
+      "cells": 1039
+    },
+    {
+      "perturbation": "sgOGG1_3",
+      "cells": 367
+    },
+    {
+      "perturbation": "sgOGG1_4",
+      "cells": 1255
+    },
+    {
+      "perturbation": "sgPTGER2_1",
+      "cells": 686
+    },
+    {
+      "perturbation": "sgPTGER2_2",
+      "cells": 569
+    },
+    {
+      "perturbation": "sgPTGER2_3",
+      "cells": 597
+    },
+    {
+      "perturbation": "sgPTGER2_4",
+      "cells": 785
+    },
+    {
+      "perturbation": "sgRACGAP1_3",
+      "cells": 303
+    },
+    {
+      "perturbation": "sgRACGAP1_9",
+      "cells": 330
+    },
+    {
+      "perturbation": "sgTOR1AIP1_1",
+      "cells": 478
+    },
+    {
+      "perturbation": "sgYY1_10",
+      "cells": 775
+    },
+    {
+      "perturbation": "sgYY1_3",
+      "cells": 923
+    }
+  ],
+  "qc": {
+    "cells_after_filtering": [100]
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Dataset Summarizer</title>
+    <style>
+        .gridLayout {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+        }
+        .cards {
+              border: 2px solid #f76707;
+              border-radius: 5px;
+              background-color: #fff4e6;
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<header> AI-Powered Dataset Summarizer </header>
+
+
+
+<!--
+
+<div>
+<label for="UploadPanel"> Upload CSV files</label>
+<input type="file" id="UploadPanel"
+name="UploadPanel" accept=".csv,.tsv,.txt" multiple />
+</div>
+
+
+<div>
+<button id="analyzeBtn">Analyze</button>
+
+</div>
+</div>
+-->
+<div> <h3>
+Analysis Summary
+</h3>
+<div class="gridLayout">
+    <!--
+    Grid layout / cards for stats.
+
+    Separate card sections:
+Trends / Findings → bullet points
+Risks / Gaps → red highlights
+Reviewer Questions → yellow highlights
+Executive Summary → green card
+    -->
+
+
+
+    <div class="cards"> <b>Card 1: Number of cells</b>
+        <!--
+        Card 1: Number of cells
+        is covered in R as num_cells <- nrow(expr)
+        -->
+        <div id="numCells"></div>
+        <section class="Trends"> 
+            <!--
+            Trends / Findings → bullet points-->
+        </section>
+        <section class="Risks"> 
+            <!--Risks / Gaps → red highlights-->
+        </section>
+
+        <section class="ReviewerQuestions">
+            <!--
+            Reviewer Questions → yellow highlights-->
+        </section>
+        <section class="ExecutiveSummary ">
+            <!--
+            Executive Summary → green card-->
+        </section>
+
+
+</div>
+
+
+    <div class="cards"> <b>Card 2: Number of genes </b>
+        <!--
+        Card 2: Number of genes
+        is covered in num_genes <- ncol(expr)
+        -->
+        <div id="numGenes"></div>
+     <section class="Trends"> 
+            <!--
+            Trends / Findings → bullet points-->
+        </section>
+        <section class="Risks"> 
+            <!--Risks / Gaps → red highlights-->
+        </section>
+
+        <section class="ReviewerQuestions">
+            <!--
+            Reviewer Questions → yellow highlights-->
+        </section>
+        <section class="ExecutiveSummary ">
+            <!--
+            Executive Summary → green card-->
+        </section>
+
+
+
+</div>
+    <div class="cards"> <b>         Card 3: Top missing genes</b>
+
+        <!--
+        Card 3: Top missing genes
+        is covered in missing_per_gene <- colSums(is.na(expr))
+        head(sort(missing_per_gene, decreasing = TRUE ), 5)
+        
+        -->
+        <div id="topMissingGenes"></div>
+
+             <section class="Trends"> 
+            <!--
+            Trends / Findings → bullet points-->
+        </section>
+        <section class="Risks"> 
+            <!--Risks / Gaps → red highlights-->
+        </section>
+
+        <section class="ReviewerQuestions">
+            <!--
+            Reviewer Questions → yellow highlights-->
+        </section>
+        <section class="ExecutiveSummary ">
+            <!--
+            Executive Summary → green card-->
+        </section>
+
+
+
+</div>
+
+
+    <div class="cards"> <b>Card 4: Clusters summary</b>
+        <div id="clusterSum"></div>
+        <!--
+        Card 4: Clusters summary
+        is covered in 
+        cluster_summary treat perturbation as cluster <- meta %>%
+            group_by(perturbation) %>%
+            summarise(cells = n())
+        
+        -->
+             <section class="Trends"> 
+            <!--
+            Trends / Findings → bullet points-->
+        </section>
+        <section class="Risks"> 
+            <!--Risks / Gaps → red highlights-->
+        </section>
+
+        <section class="ReviewerQuestions">
+            <!--
+            Reviewer Questions → yellow highlights-->
+        </section>
+        <section class="ExecutiveSummary ">
+            <!--
+            Executive Summary → green card-->
+        </section>
+
+
+
+    </div>
+
+</div>
+
+<script>
+fetch("results.json")
+  .then(res => res.json())
+  .then(data => {
+    document.querySelector("#numCells").innerText =
+      data.dataset_overview.num_cells;
+
+    document.querySelector("#numGenes").innerText =
+      data.dataset_overview.num_genes;
+
+    document.querySelector("#topMissingGenes").innerText =
+    data.missing_data.top_missing_genes;
+
+    const clusterDiv = document.querySelector("#clusterSum");
+    const clusterInfo = data.cluster_summary.map(c => `${c.perturbation}: ${c.cells} cells`);
+    clusterDiv.innerText = clusterInfo.join("\n");
+
+
+  });
+</script>
+
+</body>
+</html>
+
+<!-- sections are covered by call_gemini(summary_text)-->
